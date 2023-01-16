@@ -1,10 +1,12 @@
-numbers = [1, 3, 5]
-position = 0
-while position < len(numbers):
-    number = numbers[position]
-    if number % 2 ==0:
-        print("Found even number found")
+
+
+while True:
+    dan = int(input("Dan(0) to quit : "))
+    if dan == 0:
         break
-    position += 1
-else:
-    print("No even number found")
+    elif 1 < dan < 10:
+        for i in range(1, 10, 1):
+            print("{0}*{1} = {2}".format(dan, i ,dan * i))
+    else:
+        print("2에서 9사이의 숫자를 입력하세요")
+
