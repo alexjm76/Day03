@@ -11,5 +11,12 @@
 
 start = int(input("start number: "))
 end = int(input("end number: "))
-for k in range(start, end+1):
-    print(k, end=" ")
+for i in range(start , end+1):
+    is_prime = True
+
+    for k in range(2, i):
+        if i % k ==0:
+            is_prime =False
+            break
+    else:
+        print(i, end=" ")
