@@ -1,14 +1,15 @@
-num = int(input("Enter a number(0 to quit) : "))
-is_prime =True
+# #input 2 numbers
+#
+# start = int(input("start number: "))
+#
+# end = int(input("end number: "))
+# print(start, end)
 
-k = 1
+# start_end = input("start and end number : ").split()
+# print(start_end)
+# print(int(start_end[0]),int(start_end[1]))
 
-for k in range(2, num):
-    if num % k == 0:
-        is_prime = False
-        break
-    print(k)
-if is_prime:
-    print(f"{num} is prime number!")
-else:
-    print(f"{num} is Not prime number")
+start = int(input("start number: "))
+end = int(input("end number: "))
+for k in range(start, end+1):
+    print(k, end=" ")
